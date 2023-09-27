@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Adiths</title>
+  <meta name="title" content="Adiths">
+  <meta name="description" content="Sync with Technology">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-dark.svg" width="101" alt="ADITHS home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="101" alt="ADITHS home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+      <section class="section hero" aria-label="home">
+        <div class="container">
+          <figure class="hero-banner">
+            <img src="./assets/images/logo-dark-large.svg" width="560" height="540" alt="Julia" class="w-100"
+              data-reveal="top">
+
+          </figure>
+          <div class="hero-content">
+            <h1 class="h1 hero-title"
+              style="-webkit-background-clip: text;background-clip: text;background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);color: transparent;"
+              data-reveal="top" data-reveal-delay="0.5s">
+              From Possibility, </br> To Reality
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Welcome to Adiths! We are passionate developers working to help you digitize your presence and take a leap
+              into modernization.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#" class="btn btn-primary">See Our Works</a>
+              <a href="#" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section id="about" class="section about" aria-label="about">
+        <div class="container">
+          <div class="wrapper">
+            <div data-reveal="left" style="text-align: center;">
+              <h2 class="h2 section-title">What We Do?</h2>
+
+              <p class="section-text">
+                We create stunning Websites that gains you popularity, Softwares and Web Apps that simplifies management
+                of your business. For complex enterprise requirements, we deliver full-ledged management systems and ERP
+                solutions.
+              </p>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+            <li data-reveal="bottom">
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                </div>
+
+                <h3 class="h4 card-title">Web Design</h3>
+
+                <p class="card-text">
+                  Are you digitally present? If not let's get started with making you available to the globally, else we
+                  can improve or rennovate your presence.
+                </p>
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                    alt="web development icon">
+                </div>
+
+                <h3 class="h4 card-title">Development</h3>
+
+                <p class="card-text">
+                  Need any help with smoothing & simplifying your business with technology? We assure you to deliver
+                  efficient softwares and web application, whichever suites your requirement.
+                </p>
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                </div>
+
+                <h3 class="h4 card-title">SEO</h3>
+
+                <p class="card-text">
+                  Want to rank your website in top search results? Great, we're here to help you with that.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECT
+      -->
+      <section id="portfolio" class="section project" aria-labelledby="project-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Client Projects</h2>
+
+              <p class="section-text">
+                Check out some of our latest projects with creative ideas.
+              </p>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                <div class="card-content" data-reveal="left">
+                  <p class="card-tag" style="color: #a07cc5">Web Design</p>
+
+                  <h3 class="h3 card-title">Nagnath Design</h3>
+
+                  <p class="card-text">
+                    An architecture's website, for showcasing the world their profound works and elegant designs.
+                    Designed with beauty, creativity and simplicity.
+                  </p>
+
+                  <a href="https://nagnathdesign.000webhostapp.com/" target="_blank" class="btn-text"
+                    style="color: #a07cc5">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/Nagnath Design.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                <div class="card-content" data-reveal="right">
+                  <p class=" card-tag" style="color: #3f78e0">Web App</p>
+
+                  <h3 class="h3 card-title">Employee Salary Management</h3>
+
+                  <p class="card-text">
+                    A customised software accessible as a web app on client's local network. It provides ease of
+                    management, intuitive user experience and required analytics dashboard. Supports multiple devices
+                    simultaneously and automatic database backup.
+                  </p>
+
+                  <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/Employee Salary Management.png" width="600" height="367" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-3" style="background-color: #f5faf7">
+                <div class="card-content" data-reveal="left">
+                  <p class=" card-tag" style="color: #7cb798">Web App</p>
+
+                  <h3 class="h3 card-title">Export Import Billing System</h3>
+
+                  <p class="card-text">
+                    It is a simple billing system for generating invoices in various formats based on specific
+                    requirements. Simple, yet includes detailed functionalities for better utilization and easy to
+                    operate. Dynamic bill generation depending on different criteria and save bill in desired format.
+                  </p>
+
+                  <!-- <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/Export Import Billing System.png" width="600" height="367" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fcf4f6">
+                <div class="card-content" data-reveal="left">
+                  <p class=" card-tag" style="color: #d16b86">Web Design</p>
+
+                  <h3 class="h3 card-title">Subharambh</h3>
+
+                  <p class="card-text">
+                    An E-commerce website for purchasing Kurtas & T-Shirts. It comes with various features such as Admin
+                    Dashboard for Managing Products, Order system with confirmation Notification through Email and many
+                    more.
+                  </p>
+
+                  <a href="https://shubharambh-fashion.000webhostapp.com/" target="_blank" class="btn-text"
+                    style="color: #d16b86">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/Subharambh.png" width="620" height="370" loading="lazy" alt="Mobile Design"
+                    class="w-100">
+                </figure>
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                <div class="card-content" data-reveal="right">
+                  <p class=" card-tag" style="color: #3f78e0">Web App</p>
+
+                  <h3 class="h3 card-title">Shree Khodiyar Metal Products</h3>
+
+                  <p class="card-text">
+                    Personalised invoicing software made for serving customer requirements for a nice user interface,
+                    ease of use, automatic data backups, custom built invoice format, security encompassing
+                    authentication and authorization.
+                  </p>
+
+                  <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/Shree Khodiyar Metal Products.png" width="600" height="367" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+      <section id="contact" class="section contact" aria-label="contact">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <div>
+              <h2 class="h2 section-title" style="text-align: center;">Contact Us</h2>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-content" data-reveal="left">
+              <h2 class="h2 section-title" style="margin-bottom: 0;">Akash Pambhar</h2>
+
+              <p class="section-text" style="margin-bottom: 1em;">
+                Software Engineer
+              </p>
+
+              <div style="display: flex; gap: 1em;justify-content: center;">
+                <a href="https://wa.me/+917572840364" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-whatsapp" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="mailto:akash.pambhar@yahoo.com" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="mail-outline" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/akashpambhar/" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-linkedin" style="font-size: 28px;"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-content" data-reveal="right">
+              <h2 class="h2 section-title" style="margin-bottom: 0;">Dharmik Parmar</h2>
+
+              <p class="section-text" style="margin-bottom: 1em;">
+                Software Engineer
+              </p>
+
+              <div style="display: flex; gap: 1em;justify-content: center;">
+                <a href="https://wa.me/+919664776896" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-whatsapp" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="mailto:dharmikp940@gmail.com" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="mail-outline" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/dharmikparmar7/" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-linkedin" style="font-size: 28px;"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="container" style="text-align: center;">
+      <p class="copyright">
+        © 2023 Adiths
+      </p>
+    </div>
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
