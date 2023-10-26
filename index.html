@@ -12,7 +12,7 @@
   <title>Adiths</title>
   <meta name="title" content="Adiths">
   <meta name="description" content="Sync with Technology">
-  <meta name="google-site-verification" content="jeebaKtWoK2CmiEm-mM-50z_LBHb52nzENC4eB1MF5k" />
+  <meta name="google-site-verification" content="jeebaKtWoK2CmiEm-mM-50z_LBHb52nzENC4eB1MF5k"   />
 
   <!-- 
     - favicon
@@ -30,6 +30,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
 </head>
 
@@ -67,6 +68,10 @@
 
           <li>
             <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#testimonial" class="navbar-link">Testimonials</a>
           </li>
 
           <li>
@@ -136,14 +141,14 @@
             <li data-reveal="bottom">
               <div class="about-card">
                 <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                  <img src="./assets/images/icon-1.svg" width="180" height="180" loading="lazy" alt="automation icon">
                 </div>
 
-                <h3 class="h4 card-title">Web Design</h3>
+                <h3 class="h4 card-title">Automation</h3>
 
                 <p class="card-text">
-                  Are you digitally present? If not let's get started with making you available to the globally, else we
-                  can improve or rennovate your presence.
+                  Elevate productivity with our custom automation tools and software simplifying processes, empowering
+                  seamless management for a transformative and streamlined workflow experience.
                 </p>
               </div>
             </li>
@@ -151,7 +156,7 @@
             <li data-reveal="bottom" data-reveal-delay="0.5s">
               <div class="about-card">
                 <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                  <img src="./assets/images/icon-3.svg" width="160" height="160" loading="lazy"
                     alt="web development icon">
                 </div>
 
@@ -167,13 +172,14 @@
             <li data-reveal="bottom" data-reveal-delay="0.75s">
               <div class="about-card">
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                  <img src="./assets/images/icon-4.svg" width="205" height="205" loading="lazy" alt="data extraction icon">
                 </div>
 
-                <h3 class="h4 card-title">SEO</h3>
+                <h3 class="h4 card-title">Data Extraction</h3>
 
                 <p class="card-text">
-                  Want to rank your website in top search results? Great, we're here to help you with that.
+                  Unlock valuable insights effortlessly with our efficient data extraction service. Precision, speed,
+                  and scalability tailored to your needs. Transform data into actionable intelligence seamlessly.
                 </p>
               </div>
             </li>
@@ -196,7 +202,12 @@
             </div>
           </div>
 
-          <ul class="grid-list">
+          <ul class="project-filter">
+            <li class="list project-filter-active" data-filter="web-apps">Web Apps</li>
+            <li class="list" data-filter="automation-tools">Automation Tools</li>
+          </ul>
+
+          <ul class="grid-list web-apps">
             <li>
               <div class="project-card project-card-1" style="background-color: #f8f5fb">
                 <div class="card-content" data-reveal="left">
@@ -333,6 +344,248 @@
               </div>
             </li>
           </ul>
+
+          <ul class="automation-tools">
+            <div>
+              <li>
+                <div class="project-card" style="background-color: #f1f5fd">
+                  <div class="card-content" data-reveal="right">
+                    <p class=" card-tag" style="color: #3f78e0">Automation Tool</p>
+
+                    <h3 class="h3 card-title">Table Extractor</h3>
+
+                    <p class="card-text">
+                      If you've ever tried to do anything with data provided to you in PDFs, you know how painful it is
+                      — there's no easy way to copy-and-paste rows of data out of PDF files. This project allows you to
+                      extract that data into a CSV or Microsoft Excel spreadsheet using a simple, easy-to-use interface.
+                      It works on Mac, Windows and Linux.
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card" style="background-color: #f5faf7">
+                  <div class="card-content" data-reveal="left">
+                    <p class=" card-tag" style="color: #7cb798">Automation Tool</p>
+
+                    <h3 class="h3 card-title">Invoice Processing</h3>
+
+                    <p class="card-text">
+                      Our Invoice Processing Software effortlessly detects and extracts text from PDFs, intelligently
+                      parsing crucial sections based on selected templates. Streamline your financial workflow with
+                      precision and efficiency.
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card" style="background-color: #fcf4f6">
+                  <div class="card-content" data-reveal="left">
+                    <p class=" card-tag" style="color: #d16b86">Web Design</p>
+
+                    <h3 class="h3 card-title">Automated Email Sender</h3>
+
+                    <p class="card-text">
+                      It's developed to send email from multiple email accounts and let you send your cold email, lead
+                      generator email to your clients with just one click.
+                    </p>
+
+                    <!-- <a href="#" target="_blank" class="btn-text"
+                      style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a> -->
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card" style="background-color: #f1f5fd">
+                  <div class="card-content" data-reveal="right">
+                    <p class=" card-tag" style="color: #3f78e0">Automation Tool</p>
+
+                    <h3 class="h3 card-title">Video Transcriptor</h3>
+
+                    <p class="card-text">
+                      Speech recognition is an interesting task that allows you to recognize the text behind the audio.
+                      With the use of voice recognition, we can also extract text from a video. Using this tool we can
+                      extract the text from the video. It supports the youtube video link also.
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card" style="background-color: #f1f5fd">
+                  <div class="card-content" data-reveal="right">
+                    <p class=" card-tag" style="color: #3f78e0">Automation Tool</p>
+
+                    <h3 class="h3 card-title">Automated PDF Editing</h3>
+
+                    <p class="card-text">
+                      Using this software, you can edit PDFs automatically which involve tasks such as populating
+                      multiple PDFs with data from different sources (eg. Databases, text, excel, csv files). Along with
+                      it, automated saving and printing. All can be achieved with just a single program execution.
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card" style="background-color: #f5faf7">
+                  <div class="card-content" data-reveal="left">
+                    <p class=" card-tag" style="color: #7cb798">Automation Tool</p>
+
+                    <h3 class="h3 card-title">Social Media Scrapper</h3>
+
+                    <p class="card-text">
+                      It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g.
+                      the relevant posts. from Twitter, Instagram, Facebook etc
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #7cb798">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a> -->
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="project-card" style="background-color: var(--cultured)">
+                  <div class="card-content" data-reveal="left">
+                    <h3 class="h3 card-title" style="text-align: center;">
+                      Have any other requirements? We would be more than happy to build it for you.
+                    </h3>
+                    <div style="display: flex; justify-content: center;">
+                      <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <!--
+        - #TESTIMONIALS
+      -->
+      <section id="testimonial" class="section about" style="background-color: var(--cultured);"
+        aria-label="testimonial">
+        <div class="container">
+          <div class="wrapper">
+            <div data-reveal="left" style="text-align: center;">
+              <h2 class="h2 section-title">What Clients Say About Us</h2>
+            </div>
+          </div>
+
+          <div class="swiper" data-reveal="top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar2.svg" alt="Client 1">
+                  <p>"They developed my E-commerce website within time and their skill to develop such a website is very
+                    appreciable.
+                    Thanks Dharmik and Akash for introducing my clothing business to internet world. Once again Thanks a
+                    lot."</p>
+                  <h3>Bhargav Vaghela</h3>
+                  <span>Owner, Shubharambh Fashion</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar3.svg" alt="Client 2">
+                  <p>"I am an Interior designer, I can easily showcase my designs to the client using the website Akash
+                    and Dharmik made for me.
+                    I can manage my designs using dashboard and it is reflected in the site. Thanks a lot for your
+                    support."</p>
+                  <h3>Sagar Mashru</h3>
+                  <span>Interior Designer, Nagnath Design</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar5.svg" alt="Client 3">
+                  <p>"Now I can manage my employees salary with system developed by ADITHS Inc. They developed the
+                    system with such a manner that fulfills
+                    my needs and works as I had envisioned. Thank you ADITHS Inc. and I appreciate your effort."</p>
+                  <h3>Hiral Sorathiya</h3>
+                  <span>Owner, Hiral Enterprise</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar1.svg" alt="Client 4">
+                  <p>"Thank you to both of you for developing a custom Import/Export Invoicing Software. It was a very
+                    specific requirement for our
+                    business and I talked with them and
+                    they provided me a custom solution. They also provide maintenance to changes I want. Really
+                    appreciate your service, Thank You!"</p>
+                  <h3>Dhruv Savaliya</h3>
+                  <span>Manager, A Chemical company</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar6.svg" alt="Client 5">
+                  <p>"I work in EY GDS, We were having a Dummy Project program and I hired Dharmik to to work on this
+                    project which was of 4 weeks and in this project we used almost all backed technologies, we even
+                    implemented kafka in every possible way. So Dharmik was the suitable candidate according to me and
+                    my managers from EY. He has amazing coding skills. Moreover, he maintains coding standards like an
+                    experienced professional. He always delivered the requirements within time. I and my managers are
+                    highly impressed with his work."</p>
+                  <h3>Arkajit Saha</h3>
+                  <span>Senior Software Engineer, EY</span>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial">
+                  <img src="./assets/images/avatar4.svg" alt="Client 6">
+                  <p>"Switching to this invoicing software was a game-changer for my business. It's straightforward,
+                    user-friendly, and has made managing invoices a breeze. Highly recommended for fellow
+                    entrepreneurs!"</p>
+                  <h3>Zenith Sakhiya</h3>
+                  <span>Owner, Zenith Sales</span>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 10px;" class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
 
@@ -348,6 +601,9 @@
           </div>
           <div class="contact-card">
             <div class="contact-content" data-reveal="left">
+              <div class="image-container">
+                <div class="circle-image-akash"></div>
+              </div>
               <h2 class="h2 section-title" style="margin-bottom: 0;">Akash Pambhar</h2>
 
               <p class="section-text" style="margin-bottom: 1em;">
@@ -364,10 +620,21 @@
                 <a href="https://www.linkedin.com/in/akashpambhar/" class="btn btn-secondary" target="_blank">
                   <ion-icon name="logo-linkedin" style="font-size: 28px;"></ion-icon>
                 </a>
+                <div class="break"></div>
+                <a href="https://www.upwork.com/freelancers/~01081101370986b54e" class="btn btn-secondary"
+                  target="_blank">
+                  <ion-icon name="briefcase-outline" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="https://github.com/akashpambhar" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-github" style="font-size: 28px;"></ion-icon>
+                </a>
               </div>
             </div>
 
             <div class="contact-content" data-reveal="right">
+              <div class="image-container">
+                <div class="circle-image-dharmik"></div>
+              </div>
               <h2 class="h2 section-title" style="margin-bottom: 0;">Dharmik Parmar</h2>
 
               <p class="section-text" style="margin-bottom: 1em;">
@@ -383,6 +650,14 @@
                 </a>
                 <a href="https://www.linkedin.com/in/dharmikparmar7/" class="btn btn-secondary" target="_blank">
                   <ion-icon name="logo-linkedin" style="font-size: 28px;"></ion-icon>
+                </a>
+                <div class="break"></div>
+                <a href="https://www.upwork.com/freelancers/~01e97fef14a134ad6e" class="btn btn-secondary"
+                  target="_blank">
+                  <ion-icon name="briefcase-outline" style="font-size: 28px;"></ion-icon>
+                </a>
+                <a href="https://github.com/Dharmikparmar7" class="btn btn-secondary" target="_blank">
+                  <ion-icon name="logo-github" style="font-size: 28px;"></ion-icon>
                 </a>
               </div>
             </div>
@@ -413,6 +688,34 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      centerSlide: "true",
+      fade: "true",
+      grabCursor: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1000: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
 </body>
 
 </html>

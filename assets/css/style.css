@@ -562,6 +562,46 @@ body.nav-active {
   gap: 10px;
 }
 
+.project-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cultured);
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.project-filter li {
+  margin: 10px;
+  padding: 5px 20px;
+  color: var(--true-blue);
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+}
+
+.project-filter-active {
+  color: #ffffff !important;
+  background-color: var(--true-blue);
+  box-shadow: 0px 0px 18px 6px hsla(210, 100%, 45%, 0.18);
+}
+
+.automation-tools>div {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+}
+
+.automation-tools>div .card-content {
+  padding: var(--padding);
+}
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
@@ -602,6 +642,10 @@ textarea.input-field {
   height: 120px;
   max-height: 240px;
   resize: vertical;
+}
+
+.break {
+  display: none;
 }
 
 /*-----------------------------------*\
@@ -687,6 +731,15 @@ textarea.input-field {
 
   .project .btn {
     min-width: max-content;
+  }
+
+  .automation-tools>div {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .automation-tools>div li:last-child {
+    grid-column: span 2;
   }
 
   /**
@@ -832,7 +885,8 @@ textarea.input-field {
     row-gap: 50px;
   }
 
-  .project .grid-list>li:nth-child(-n+2), .project .grid-list>li:last-child {
+  .project .grid-list>li:nth-child(-n+2),
+  .project .grid-list>li:last-child {
     grid-column: 1 / 3;
   }
 
@@ -895,6 +949,11 @@ textarea.input-field {
   .contact-card {
     gap: 150px;
   }
+
+  .break {
+    display: block;
+    flex-basis: 100%;
+  }
 }
 
 /**
@@ -931,4 +990,67 @@ textarea.input-field {
   .about .grid-list {
     gap: 60px;
   }
+}
+
+/* TESTIMONIAL */
+.swiper-slide {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.testimonial {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.testimonial h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.testimonial span {
+  font-size: 14px;
+  color: #666;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.circle-image-dharmik {
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/Dharmik.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.circle-image-akash {
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/Akash.jpg');
+  background-size: cover;
+  border-radius: 50%;
 }

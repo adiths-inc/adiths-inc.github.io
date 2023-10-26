@@ -20,7 +20,6 @@ const navLinks = document.querySelectorAll(".navbar-link");
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
-  document.body.classList.toggle("nav-active");
 }
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
@@ -60,3 +59,58 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+const projectList = document.querySelectorAll(".list");
+
+addEventOnElements(projectList, "click", function (event) {
+  const target = event.target;
+  if (target.tagName.toLowerCase() === 'li') {
+    var siblings = target.parentNode.children;
+    for (var i = 0; i < siblings.length; i++) {
+      siblings[i].classList.remove('project-filter-active');
+    }
+
+    target.classList.add('project-filter-active');
+  }
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  var listElements = document.querySelectorAll('.list');
+  const projectCards = [];
+  projectCards[0] = document.querySelector('ul.web-apps');
+  projectCards[1] = document.querySelector('ul.automation-tools');
+  projectCards[1].style.display = 'none';
+
+  listElements.forEach(function (listElement) {
+    listElement.addEventListener('click', function () {
+      var value = this.getAttribute('data-filter');
+      hideUnselectedprojectCards(value);
+    });
+  });
+
+  function hideUnselectedprojectCards(value) {
+    projectCards.forEach(function (projectCard) {
+      if (!projectCard.classList.contains(value)) {
+        projectCard.style.display = 'none';
+      } else {
+        projectCard.style.display = '';
+      }
+    })
+  }
+});
+
+
+document.addEventListener('click', function (event) {
+  var target = event.target;
+
+  if (target.classList.contains('list')) {
+    if (target.tagName.toLowerCase() === 'li') {
+      var siblings = target.parentNode.children;
+      for (var i = 0; i < siblings.length; i++) {
+        siblings[i].classList.remove('project-filter-active');
+      }
+
+      target.classList.add('project-filter-active');
+    }
+  }
+});
