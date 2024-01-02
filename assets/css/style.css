@@ -742,6 +742,14 @@ textarea.input-field {
     grid-column: span 2;
   }
 
+  .ui-ux-designs {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ui-ux-designs>div {
+    row-gap: 50px;
+  }
+
   /**
    * CONTACT
    */
@@ -916,7 +924,7 @@ textarea.input-field {
    * CONTACT
    */
   .contact-card {
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 90px;
   }
@@ -947,7 +955,7 @@ textarea.input-field {
    * CONTACT
    */
   .contact-card {
-    gap: 150px;
+    gap: 0;
   }
 
   .break {
@@ -1051,6 +1059,14 @@ textarea.input-field {
   width: 200px;
   height: 200px;
   background-image: url('../images/Akash.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.circle-image-vivek {
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/Vivek.jpeg');
   background-size: cover;
   border-radius: 50%;
 }
