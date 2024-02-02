@@ -893,7 +893,7 @@ textarea.input-field {
     row-gap: 50px;
   }
 
-  .project .grid-list>li:nth-child(-n+3),
+  .project .grid-list>li:nth-child(-n+4),
   .project .grid-list>li:last-child {
     grid-column: 1 / 3;
   }

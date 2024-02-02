@@ -77,8 +77,8 @@ addEventOnElements(projectList, "click", function (event) {
 document.addEventListener('DOMContentLoaded', function () {
   var listElements = document.querySelectorAll('.list');
   const projectCards = [];
-  projectCards[0] = document.querySelector('ul.ui-ux-designs');
-  projectCards[1] = document.querySelector('ul.web-apps');
+  projectCards[0] = document.querySelector('ul.web-apps');
+  projectCards[1] = document.querySelector('ul.ui-ux-designs');
   projectCards[2] = document.querySelector('ul.automation-tools');
   projectCards[2].style.display = 'none';
   projectCards[1].style.display = 'none';
