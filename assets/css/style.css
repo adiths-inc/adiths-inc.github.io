@@ -649,6 +649,22 @@ textarea.input-field {
 }
 
 /*-----------------------------------*\
+  #CONTACT2
+\*-----------------------------------*/
+
+.contact2 { padding-block-end: 0; }
+
+.contact2-card {
+  background-color: var(--snow);
+  padding: 32px;
+  border-radius: var(--radius-8);
+  display: grid;
+  gap: 40px;
+}
+
+.contact2 .section-title { margin-block-start: 20px; }
+
+/*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 .footer {
@@ -893,7 +909,7 @@ textarea.input-field {
     row-gap: 50px;
   }
 
-  .project .grid-list>li:nth-child(-n+5),
+  .project .grid-list>li:nth-child(-n+6),
   .project .grid-list>li:last-child {
     grid-column: 1 / 3;
   }
@@ -924,7 +940,17 @@ textarea.input-field {
    * CONTACT
    */
   .contact-card {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+  }
+
+  /**
+   * CONTACT2
+   */
+
+   .contact2-card {
+    grid-template-columns: 0.8fr 1fr;
     align-items: center;
     gap: 90px;
   }
@@ -962,6 +988,12 @@ textarea.input-field {
     display: block;
     flex-basis: 100%;
   }
+
+  /**
+   * CONTACT2
+   */
+
+   .contact2-card { gap: 150px; }
 }
 
 /**
@@ -1051,6 +1083,14 @@ textarea.input-field {
   width: 200px;
   height: 200px;
   background-image: url('../images/Dharmik.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.circle-image-kanishk {
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/Kanishk.jpeg');
   background-size: cover;
   border-radius: 50%;
 }
